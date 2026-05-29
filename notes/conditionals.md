@@ -1,4 +1,5 @@
-# Conditionals
+# Conditional Statement
+Python uses conditional statements to perform different actions based on whether a specific condition evaluates to True or False.
 ## If...Else Statement
 ### Example - 1
 ```bash
@@ -46,6 +47,6 @@ match day:
     print("Saturday")
   case 7:
     print("Sunday")
-  case _:
+  case _:                            # default case
     print("Please enter valid day")
 ```
