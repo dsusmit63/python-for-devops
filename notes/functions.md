@@ -24,4 +24,4 @@ You can pass data into a function as arguments. These values are received by par
 ### Return values
 Use the return statement to send back data to the caller.
 ### Default Parameter
-You can assign default values to parameters, which are used if no argument is provided during call
+You can assign default values to parameters, which are used if no argument is provided during call.
