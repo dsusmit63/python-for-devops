@@ -1,24 +1,24 @@
-# Variables & Data Types in Python
-## Variable
+# Variable
 In python, variable is a name that refers to a value stored in memory.
 ```bash
 user_name = "john doe"
 age = 21
 isActive = True
-x, y, z = 1, 2, 3  # multiple variable assignment in single line
-x = y = z = 1      # same value assigned to multiple variables
+x, y, z = 1, 2, 3   # multiple variable assignment in single line
+x = y = z = 1       # same value assigned to multiple variables
 ```
-### Variable naming convention
-- Allowed: username, user_name, user1, _username, userName
+## Variable naming convention
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+- Allowed: username, user_name, user1, _username, userName(allowed but camelCase not recommended in python)
 - Not Allowed: 1user, user-name, class (or any language specific keyword)
-- In python, snake_case pattern is followed in industry
-### Python is dynamically typed language
-Means, you do not declare the type explicitly, python automatically determines type.
+- In python, snake_case pattern is followed in industry.
+## Python is dynamically typed language
+Means, you do not declare the type explicitly, python automatically determines type, and can even change type after they have been set.
 ```bash
-x = 10          # integer
-x = "hello"     # now string
+x = 10          # x is of type int
+x = "hello"     # now x is of type str
 ```
-### Variable Scope
+## Variable Scope
 **Local Variable -** Inside function, accessible within the function.
 ```bash
 def test():
@@ -32,7 +32,7 @@ def test():
     print(x)   # 10
 test()
 ```
-**Example -**
+### Example
 ```bash
 x = 10
 def test():
@@ -41,7 +41,7 @@ def test():
 test()
 print(x)       # 10
 ```
-### Delete Variable
+## Delete Variable
 ```bash
 x = 10
 del x
@@ -49,20 +49,20 @@ print(x)       # error: x is not defined
 ```
 ## Datatypes
 Type of data stored in a variable.
-### Types - 
-#### Numeric Type
+## Types - 
+### Numeric Type
 ```bash
 a = 10         # int
 b = -10        # int
 c = 10.5       # float
 ```
-#### String
+### String
 ```bash
 name = "john doe"
 print(name[0]) # j 
 name[0] = "f"  # String is immutable, so changing it is not possible once created
 ```
-**String Operations -**
+#### String Operations 
 **Concatinaion -**
 ```bash
 text1 = "hello"
@@ -73,8 +73,8 @@ print(text1 + " " + text2)   # hello world
 ```bash
 print("hi" * 3)              # hihihi
 ```
-#### Boolean
-Two types of value - True, False
+### Boolean
+Boolean represents one of two values: True or False
 ```bash
 isActive = True
 if (isActive):
@@ -82,7 +82,7 @@ if (isActive):
 else:
     print("User not active")
 ```
-#### List
+### List
 Lists are used to store multiple items in a single variable. List items are ordered, indexed, mutable, and duplication is allowed.
 ```bash
 num_list = [10,20,30]
@@ -91,7 +91,7 @@ mixed_data_list = [10, "hello", True]         # List with different types of dat
 print(num_list[0])                            # 10
 print(type(num_list))                         # List
 ```
-#### Tuples
+### Tuples
 Tuples are also used to store multiple items in a single variable. Tuple items are ordered, indexed, immutable, and duplication is allowed.
 ```bash
 num_tuple = (10,20,30)
@@ -100,7 +100,7 @@ mixed_data_tuple = [10, "hello", True]         # Tuple with different types of d
 print(num_Tuple[0])                            # 10
 print(type(num_tuple))                         # tuple
 ```
-#### Sets
+### Sets
 Like list and tuple, sets are also used to store multiple items in a single variable. Set items are unordered, unindexed, immutable, and duplication is not allowed.
 ```bash
 num_set = {10,20,30,30}
@@ -111,7 +111,7 @@ print(type(num_set))                            # set
 num_set[0] = 100                                # error - not allowed
 ```
 > True and 1, False and 0 are considered as the same value in sets, are treated as duplicates
-#### Dictionaries
+### Dictionaries
 Dictionaries are used to store data values in key:value pairs. Dictionary items are ordered, mutable, and duplication is not allowed.
 ```bash
 instance_obj = {
@@ -128,7 +128,7 @@ instance_obj["cpu"] = 3                           # update dictionary
 print(instance_obj["volume"])                     # {'volume_size': 8, 'volume_type': 'gp3'}
 print(type(instance_obj))                         # dict
 ```
-#### None
+### None
 The None keyword is used to define a null value, or no value at all. It is not the same as 0, False, or an empty string.
 ```bash
 x = None
@@ -138,8 +138,8 @@ x = None
 | --------------- | --------------- |
 | can change, add/remove data after creation   | cannot change, add/remove data after creation   |
 | List, Dictionary   | Numeric, String, Boolean, Tuple, Set, none   |
-## Type checking and Type conversion (casting)
-type() is a built-in function, used to find the type of passed inside it.
+## Type checking and Type conversion (Casting)
+type() is a built-in function, used to find the type of value passed inside it.
 ```bash
 x = 10
 print(type(x))                                       # int
