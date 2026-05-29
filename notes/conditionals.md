@@ -1,13 +1,13 @@
 # Conditionals
-## If Statement
+## If...Else Statement
 ### Example - 1
 ```bash
-a = 20
-b = 10
-if a>b:
-    print("a is greater than b")
+age = int(input("Enter your age: ))
+if age>=18:
+    print("You can vote")
+else
+    print("You can't vote")
 ```
-## If...Else Statement
 ### Example - 2
 ```bash
 is_logged_in = False
